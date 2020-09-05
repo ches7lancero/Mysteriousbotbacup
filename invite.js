@@ -12,4 +12,4 @@ async function replyWithInvite(message) {
 .catch(console.log);
 
   message.reply(invite ? `Here's your invite: ${invite}` : "There has been an error during the creation of the invite.");
-}l
+}
