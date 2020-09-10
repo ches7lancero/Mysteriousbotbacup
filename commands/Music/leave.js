@@ -14,7 +14,7 @@ module.exports = class LeaveCommand extends Command {
 
   run(message) {
     var voiceChannel = message.member.voice.channel;
-    if (!voiceChannel) return message.reply('Join a channel and try again | CTK');
+    if (!voiceChannel) return message.reply('Join a channel and try again');
 
     if (
       typeof message.guild.musicData.songDispatcher == 'undefined' ||
