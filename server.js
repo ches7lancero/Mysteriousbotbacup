@@ -16,7 +16,7 @@ client.aliases = new discord.Collection();
 client.on("ready", () => {
   //When bot is ready
   console.log("I am Reday to Go");
-  client.user.setActivity("YOUR STATUS", {type: "PLAYING"});
+  client.user.setActivity("YOUR STATUS", {type: "PLAYING"}).catch(console.error);
 });
 
 client.on("message", async message => {
